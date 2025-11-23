@@ -8,8 +8,8 @@ const Navbar = () => {
     setIsRotating(true)
 
     const link = document.createElement('a')
-    link.href = '/public/DMDW MODULE 1.pdf' // keep this file inside "public" folder
-    link.download = 'DMDW MODULE 1.pdf'
+    link.href = '/public/Aditya resume.pdf' // keep this file inside "public" folder
+    link.download = 'Adityas Resume'
     link.click()
 
     // stop animation smoothly
