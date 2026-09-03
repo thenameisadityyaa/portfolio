@@ -12,10 +12,15 @@
   "dependencies": {
     "@remixicon/react": "^4.7.0",
     "@tailwindcss/vite": "^4.1.14",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^13.1.1",
     "lucide-react": "^0.546.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.18.2",
     "remixicon": "^4.7.0",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.1.14"
   },
   "devDependencies": {

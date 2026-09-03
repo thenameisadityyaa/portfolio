@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import 'remixicon/fonts/remixicon.css'
 
 const Navbar = () => {
@@ -8,8 +9,8 @@ const Navbar = () => {
     setIsRotating(true)
 
     const link = document.createElement('a')
-    link.href = '/public/Aditya resume.pdf' // keep this file inside "public" folder
-    link.download = 'Adityas Resume'
+    link.href = '/public/Aditya_s_Resume.pdf' // keep this file inside "public" folder
+    link.download = 'Aditya Resume'
     link.click()
 
     // stop animation smoothly
@@ -18,23 +19,23 @@ const Navbar = () => {
 
   return (
     <div className='h-10 w-full p-2 flex items-center justify-between'>
-      <h1 className='font-medium text-2xl tracking-tight'>Aditya Sharma</h1>
+      <h1 className='font-[Caveat] font-medium text-2xl tracking-tight'>Aditya Sharma</h1>
 
       <div className='flex items-center justify-between gap-15 font-light tracking-tight'>
-        <h1>Home</h1>
-        <h1>About</h1>
-        <h1>Projects</h1>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Project</Link>
+        <Link to="/Blogs">Blogs</Link>
 
         <div
           className='px-7 py-3 border border-black-1 rounded-full flex justify-between items-center gap-4 h-12 font-semibold cursor-pointer hover:scale-105 transition-transform duration-300'
           onClick={handleDownload}
         >
           <button
-            className={`transition-transform duration-700 ease-in-out transform-gpu ${
-              isRotating
-                ? 'rotate-x-[360deg]'
-                : 'hover:rotate-x-[15deg]'
-            }`}
+            className={`transition-transform duration-700 ease-in-out transform-gpu ${isRotating
+              ? 'rotate-x-[360deg]'
+              : 'hover:rotate-x-[15deg]'
+              }`}
             style={{
               transformStyle: 'preserve-3d',
             }}

@@ -14,13 +14,13 @@ export default function Footer() {
         <p className="text-gray-500 text-sm font-light">
           © {new Date().getFullYear()} All rights reserved.
         </p>
-        
+
         <div className="flex items-center gap-2 text-gray-600 text-sm">
           <span>Made with</span>
-          <Heart className="w-4 h-4 fill-red-500 text-red-500 animate-pulse" />
-          <span>by <span className="font-semibold text-gray-900">Aditya</span></span>
+          <Heart className="w-4 h-4 fill-red-500 text-red-500 animate-bounce" />
+          <span>by <span className="font-medium text-gray-900 font-[Caveat] text-2xl">Aditya & GPT 5.0</span></span>
         </div>
-        
+
         <div className="flex gap-6">
           {socials.map(({ icon: Icon, link, label }) => (
             <a
